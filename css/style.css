@@ -1,0 +1,207 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:700');
+
+body {
+background-color: #eeeeee;
+}
+
+nav ul a,
+nav .brand-logo {
+  color: #eeeeee;
+}
+
+.fa-logo {
+  font-family: 'Roboto Slab', serif;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+/* Custom Colors */
+
+.fa-gray {
+  background-color: #eeeeee !important;
+}
+
+.fa-gray-text {
+  color: #eeeeee !important;
+}
+
+.fa-blue {
+  background-color: #29568d !important;
+}
+
+.fa-blue-text {
+  color: #29568d !important;
+}
+
+.fa-blue.lighten-5 {
+  background-color:#94aac6 !important;
+}
+
+.fa-blue-text.text-lighten-5 {
+  color: #94aac6 !important;
+}
+
+.fa-blue.lighten-4 {
+  background-color: #7e99ba !important;
+}
+
+.fa-blue-text.text-lighten-4 {
+  color: #7e99ba !important;
+}
+
+.fa-blue.lighten-3 {
+  background-color: #6988af !important;
+}
+
+.fa-blue-text.text-lighten-3 {
+  color: #6988af !important;
+}
+
+.fa-blue.lighten-2 {
+  background-color: #5377a3 !important;
+}
+
+.fa-blue-text.text-lighten-2 {
+  color: #5377a3 !important;
+}
+
+.fa-blue.lighten-1 {
+  background-color: #3e6698 !important;
+}
+
+.fa-blue-text.text-lighten-1 {
+  color: #3e6698 !important;
+}
+
+.fa-blue.darken-1 {
+  background-color: #244d7e !important;
+}
+
+.fa-blue-text.text-darken-1 {
+  color: #244d7e !important;
+}
+
+.fa-blue.darken-2 {
+  background-color: #204470 !important;
+}
+
+.fa-blue-text.text-darken-2 {
+  color: #204470 !important;
+}
+
+.fa-blue.darken-3 {
+  background-color: #1c3c62 !important;
+}
+
+.fa-blue-text.text-darken-3 {
+  color: #1c3c62 !important;
+}
+
+.fa-blue.darken-4 {
+  background-color: #183354 !important;
+}
+
+.fa-blue-text.text-darken-4 {
+  color: #183354 !important;
+}
+
+.fa-blue.accent-1 {
+  background-color: #3c7ac6 !important;
+}
+
+.fa-blue-text.text-accent-1 {
+  color: #3c7ac6 !important;
+}
+
+.fa-blue.accent-2 {
+  background-color: #346eb5 !important;
+}
+
+.fa-blue-text.text-accent-2 {
+  color: #346eb5 !important;
+}
+
+.fa-blue.accent-3 {
+  background-color: #2f62a1 !important;
+}
+
+.fa-blue-text.text-accent-3 {
+  color: #2f62a1 !important;
+}
+
+.fa-blue.accent-4 {
+  background-color: #234a79 !important;
+}
+
+.fa-blue-text.text-accent-4 {
+  color: #234a79 !important;
+}
+
+a:hover.fa-blue-lnk{
+  background-color: #244d7e !important;
+  webkit-transition: background-color .3s;
+  transition: background-color .3s;
+}
+
+a:active.fa-blue-lnk{
+  background-color: #244d7e !important;
+  webkit-transition: background-color .3s;
+  transition: background-color .3s;
+}
+
+a:link.fa-blue-lnk{
+  background-color: #29568d !important;
+  webkit-transition: background-color .3s;
+  transition: background-color .3s;
+}
