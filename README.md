@@ -1,10 +1,10 @@
-# [fossaegean](https:/fossaegean.gr) - Website Redesign
+# [fossaegean](https://www.fossaegean.gr) - Website Redesign
 
-Fresh new website redesign for [fossaegean](https:/fossaegean.gr).
+Fresh new website redesign for [fossaegean](https://www.fossaegean.gr).
 
 ![Preview](/img/preview.png)
 
-Based on [Materialize](https://github.com/Dogfalo/materialize).
+Based on [Materialize](https://www.github.com/Dogfalo/materialize).
 
 ## License
 
