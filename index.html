@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/iziToast.min.css" rel="stylesheet" >
 
   <!-- Icons -->
   <link rel="apple-touch-icon" sizes="57x57" href="./img/icons/apple-icon-57x57.png">
@@ -29,10 +30,13 @@
   <meta name="msapplication-TileImage" content="./img/icons/ms-icon-144x144.png">
   <meta name="theme-color" content="#29568d">
 
+
 </head>
 <body>
   <nav class="fa-blue" role="navigation">
     <div class="nav-wrapper container">
+
+
       <a id="logo-container" href="./index.html" class="brand-logo fa-blue-text"><span class="fa-logo fa-gray-text">fossaegean</span></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="https://facebook.com/fossaegean/events" target="_blank">Events</a></li>
@@ -158,6 +162,43 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script src="js/iziToast.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    iziToast.settings({
+      timeout: 0,
+      resetOnHover: true,
+      icon: 'material-icons',
+      transitionIn: 'flipInX',
+      transitionOut: 'flipOutX',
+      position: 'bottomRight'
 
+
+    });
+    iziToast.show({
+      message: 'Έλεγχος αν ο χώρος είναι ανοιχτός',
+      iconUrl: 'img/icons/loading.gif'
+    });
+
+    // Door status AJAX call.
+    $.get('https://doority.herokuapp.com/api/v1/door/status', function(data) {
+      if(data.isOpen){
+        iziToast.destroy();
+        iziToast.show({
+           message: 'Αυτή τη στιγμή ο χώρος είναι ανοιχτός',
+           color: 'green',
+           iconUrl: 'img/icons/home.svg'
+         });
+      }else{
+        iziToast.destroy();
+        iziToast.show({
+           message: 'Αυτή τη στιγμή ο χώρος είναι κλειστός',
+           color: 'red',
+           iconUrl: 'img/icons/home.svg'
+         });
+      }
+    });
+
+
+  </script>
   </body>
 </html>
